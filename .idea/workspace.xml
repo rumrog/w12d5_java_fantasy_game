@@ -2,14 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="afaf6cd7-d260-49b2-9b9d-14a2e326d0e1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/armory/Armory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/players/Barbarian.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/players/MeleeCharacter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/players/Player.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/players/PlayerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/armory/ArmoryTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/armory/Armory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/armory/Armory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/armory/Sword.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/armory/Sword.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/armory/Armory.java" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -40,6 +38,10 @@
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunDashboard">
@@ -54,7 +56,38 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.ArmoryTest">
+    <configuration name="ArmoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="w12d5_java_fantasy_game" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="armory.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="armory" />
+      <option name="MAIN_CLASS_NAME" value="armory.ArmoryTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ArmoryTest.swordCanDealDamage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="w12d5_java_fantasy_game" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="armory.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="armory" />
+      <option name="MAIN_CLASS_NAME" value="armory.ArmoryTest" />
+      <option name="METHOD_NAME" value="swordCanDealDamage" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="PlayerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="w12d5_java_fantasy_game" />
       <extension name="coverage">
@@ -72,6 +105,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ArmoryTest" />
+        <item itemvalue="JUnit.ArmoryTest.swordCanDealDamage" />
         <item itemvalue="JUnit.PlayerTest" />
       </list>
     </recent_temporary>
