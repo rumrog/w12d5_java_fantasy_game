@@ -7,6 +7,7 @@ import enemies.Orc;
 import healingTools.Potion;
 import org.junit.Before;
 import org.junit.Test;
+import rooms.TreasureRoom;
 import spells.LightingStrike;
 import spells.Spells;
 
@@ -26,6 +27,9 @@ public class PlayerTest {
     Potion potion;
     PlateArmour plateArmour;
 
+    TreasureRoom treasureRoom;
+
+
     @Before
     public void before(){
         // Armory & Spells & Healing Tools
@@ -42,6 +46,10 @@ public class PlayerTest {
 
         // Enemies
         orc = new Orc("Grishnákh", 20);
+
+        // Rooms
+        treasureRoom = new TreasureRoom(200);
+
     }
 
     @Test
@@ -100,6 +108,12 @@ public class PlayerTest {
     public void canProtect(){
         knight.takeDamage(10);
         assertEquals(35, knight.getHealthPoints());
+    }
+
+    @Test
+    public void canCollectTreasure(){
+        knight.collectTreasure(knight, treasureRoom);
+        assertEquals(300, knight.getTreasureChest());
     }
 
 }
