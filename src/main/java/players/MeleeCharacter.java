@@ -13,6 +13,12 @@ public abstract class MeleeCharacter extends Player {
         this.armory = new ArrayList<Armory>();
     }
 
+    public void addItemToArmory(Armory item){
+        this.armory.add(item);
+    }
 
+    public int countArmory(){
+        return this.armory.size();
+    }
 }
 

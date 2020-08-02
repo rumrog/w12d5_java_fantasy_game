@@ -1,6 +1,5 @@
 package players;
 
-import armory.Armory;
 import spells.Spells;
 
 import java.util.ArrayList;

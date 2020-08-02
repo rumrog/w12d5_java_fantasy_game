@@ -1,5 +1,7 @@
 package players;
 
+import armory.Armory;
+import armory.Sword;
 import org.junit.Before;
 import org.junit.Test;
 import spells.LightingStrike;
@@ -12,13 +14,17 @@ public class PlayerTest {
     Barbarian barbarian;
     Wizard wizard;
 
+    Armory sword;
     Spells lightingStrike;
 
     @Before
     public void before(){
+        // Players
         barbarian = new Barbarian("Conan", 500, 0);
         wizard = new Wizard("Gandalf", 250, 10);
 
+        // Armory & Spells
+        sword = new Sword(10);
         lightingStrike = new LightingStrike(20);
     }
 
@@ -44,5 +50,11 @@ public class PlayerTest {
     public void hasSpellsInSpells(){
         wizard.addSpellToSpells(lightingStrike);
         assertEquals(1, wizard.countSpells());
+    }
+
+    @Test
+    public void hasItemsInArmory(){
+        barbarian.addItemToArmory(sword);
+        assertEquals(1, barbarian.countArmory());
     }
 }
