@@ -7,7 +7,7 @@ public class Sword extends Armory {
     }
 
     public String canAttack(String data) {
-        return "The sword has dealt " + data + " damage!";
+        return "The sword has dealt " + data + " of damage!";
     }
 
 }

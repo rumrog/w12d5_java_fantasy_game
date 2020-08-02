@@ -7,6 +7,6 @@ public class LightingStrike extends Spells {
     }
 
     public String canAttack(String data){
-        return "The lighting strike has dealt " + data + " damage";
+        return "The lighting strike has dealt " + data + " of damage!";
     }
 }

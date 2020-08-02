@@ -7,7 +7,7 @@ public class Potion extends HealingTools {
     }
 
     public String canHeal(String data){
-        return "The potion has healed " + data + " health";
+        return "The potion has healed " + data + " of health!";
     }
 
 }
