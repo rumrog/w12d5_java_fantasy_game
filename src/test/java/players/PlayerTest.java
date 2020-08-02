@@ -28,21 +28,20 @@ public class PlayerTest {
 
     @Before
     public void before(){
+        // Armory & Spells & Healing Tools
+        sword = new Sword(10);
+        lightingStrike = new LightingStrike(5);
+        potion = new Potion(20);
+        plateArmour = new PlateArmour(5);
+
         // Players
         barbarian = new Barbarian("Conan", 50, 0);
         knight = new Knight("The Black Knight", 40, 100, plateArmour);
         wizard = new Wizard("Gandalf", 25, 10);
         cleric = new Cleric("Elrond", 40, 50);
 
-
         // Enemies
         orc = new Orc("Grishnákh", 20);
-
-        // Armory & Spells & Healing Tools
-        sword = new Sword(10);
-        lightingStrike = new LightingStrike(5);
-        potion = new Potion(20);
-        plateArmour = new PlateArmour(5);
     }
 
     @Test

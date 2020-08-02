@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="afaf6cd7-d260-49b2-9b9d-14a2e326d0e1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/armory/PlateArmour.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/players/Knight.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/players/KnightTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Runner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/players/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/players/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/armory/ArmoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/armory/ArmoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/enemies/EnemyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/enemies/EnemyTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/players/KnightTest.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/players/PlayerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/players/PlayerTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -45,6 +41,7 @@
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunDashboard">
@@ -59,7 +56,14 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.KnightTest.canProtect">
+  <component name="RunManager" selected="Application.Runner">
+    <configuration name="Runner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Runner" />
+      <module name="w12d5_java_fantasy_game" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ArmoryTest.armourCanProtect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="w12d5_java_fantasy_game" />
       <extension name="coverage">
@@ -72,21 +76,6 @@
       <option name="MAIN_CLASS_NAME" value="armory.ArmoryTest" />
       <option name="METHOD_NAME" value="armourCanProtect" />
       <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="EnemyTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="w12d5_java_fantasy_game" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="enemies.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="enemies" />
-      <option name="MAIN_CLASS_NAME" value="enemies.EnemyTest" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -141,11 +130,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Runner" />
+        <item itemvalue="JUnit.PlayerTest.canProtect" />
         <item itemvalue="JUnit.KnightTest.canProtect" />
         <item itemvalue="JUnit.KnightTest.armourIncreasesHp" />
-        <item itemvalue="JUnit.PlayerTest.canProtect" />
         <item itemvalue="JUnit.ArmoryTest.armourCanProtect" />
-        <item itemvalue="JUnit.EnemyTest" />
       </list>
     </recent_temporary>
   </component>
