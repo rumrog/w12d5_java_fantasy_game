@@ -1,4 +1,4 @@
-# Lab - Fantasy Adventure
+# Fantasy Adventure
 
 The task is to model a fantasy adventure. The game will have players, who will have a number of health points and weapons/spells. Players will fall into different categories:
 
