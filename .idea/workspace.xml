@@ -2,7 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="afaf6cd7-d260-49b2-9b9d-14a2e326d0e1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/actions/IHeal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/armory/PlateArmour.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/players/Knight.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/players/KnightTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/players/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/players/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/armory/ArmoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/armory/ArmoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/enemies/EnemyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/enemies/EnemyTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/players/PlayerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/players/PlayerTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,8 +20,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -52,7 +59,23 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.PlayerTest.canHeal">
+  <component name="RunManager" selected="JUnit.KnightTest.canProtect">
+    <configuration name="ArmoryTest.armourCanProtect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="w12d5_java_fantasy_game" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="armory.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="armory" />
+      <option name="MAIN_CLASS_NAME" value="armory.ArmoryTest" />
+      <option name="METHOD_NAME" value="armourCanProtect" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="EnemyTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="w12d5_java_fantasy_game" />
       <extension name="coverage">
@@ -68,39 +91,39 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EnemyTest.canAddWeapon" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="KnightTest.armourIncreasesHp" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="w12d5_java_fantasy_game" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="enemies.*" />
+          <option name="PATTERN" value="players.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="enemies" />
-      <option name="MAIN_CLASS_NAME" value="enemies.EnemyTest" />
-      <option name="METHOD_NAME" value="canAddWeapon" />
+      <option name="PACKAGE_NAME" value="players" />
+      <option name="MAIN_CLASS_NAME" value="players.KnightTest" />
+      <option name="METHOD_NAME" value="armourIncreasesHp" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EnemyTest.canTakeDamage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="KnightTest.canProtect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="w12d5_java_fantasy_game" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="enemies.*" />
+          <option name="PATTERN" value="players.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="enemies" />
-      <option name="MAIN_CLASS_NAME" value="enemies.EnemyTest" />
-      <option name="METHOD_NAME" value="canTakeDamage" />
+      <option name="PACKAGE_NAME" value="players" />
+      <option name="MAIN_CLASS_NAME" value="players.KnightTest" />
+      <option name="METHOD_NAME" value="canProtect" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PlayerTest.canAttack" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PlayerTest.canProtect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="w12d5_java_fantasy_game" />
       <extension name="coverage">
         <pattern>
@@ -110,23 +133,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="players" />
       <option name="MAIN_CLASS_NAME" value="players.PlayerTest" />
-      <option name="METHOD_NAME" value="canAttack" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PlayerTest.canHeal" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="w12d5_java_fantasy_game" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="players.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="players" />
-      <option name="MAIN_CLASS_NAME" value="players.PlayerTest" />
-      <option name="METHOD_NAME" value="canHeal" />
+      <option name="METHOD_NAME" value="canProtect" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -134,10 +141,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.PlayerTest.canHeal" />
-        <item itemvalue="JUnit.PlayerTest.canAttack" />
-        <item itemvalue="JUnit.EnemyTest.canTakeDamage" />
-        <item itemvalue="JUnit.EnemyTest.canAddWeapon" />
+        <item itemvalue="JUnit.KnightTest.canProtect" />
+        <item itemvalue="JUnit.KnightTest.armourIncreasesHp" />
+        <item itemvalue="JUnit.PlayerTest.canProtect" />
+        <item itemvalue="JUnit.ArmoryTest.armourCanProtect" />
         <item itemvalue="JUnit.EnemyTest" />
       </list>
     </recent_temporary>

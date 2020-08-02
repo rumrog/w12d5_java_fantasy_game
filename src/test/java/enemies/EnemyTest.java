@@ -17,8 +17,8 @@ public class EnemyTest {
 
     @Before
     public void before(){
-        orc = new Orc("Grishnákh", 200);
-        barbarian = new Barbarian("Conan", 500, 0);
+        orc = new Orc("Grishnákh", 20);
+        barbarian = new Barbarian("Conan", 50, 0);
 
         sword = new Sword(10);
     }
@@ -30,7 +30,7 @@ public class EnemyTest {
 
     @Test
     public void hasHealthPoints(){
-        assertEquals(200, orc.getHealthPoints());
+        assertEquals(20, orc.getHealthPoints());
     }
 
     @Test
@@ -42,6 +42,6 @@ public class EnemyTest {
     @Test
     public void canTakeDamage(){
         orc.takeDamage(10);
-        assertEquals(190, orc.getHealthPoints());
+        assertEquals(10, orc.getHealthPoints());
     }
 }

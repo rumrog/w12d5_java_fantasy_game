@@ -3,6 +3,7 @@ package players;
 import actions.IAttack;
 import armory.Armory;
 import enemies.Enemy;
+import healingTools.HealingTools;
 import spells.Spells;
 
 public abstract class Player implements IAttack {
@@ -40,5 +41,9 @@ public abstract class Player implements IAttack {
     public void attack(Spells spell, Enemy enemy){
         enemy.takeDamage(spell.getDamageToDeal());
     }
+
+//    public void protect(int damageValue){
+//        player.healthPoints += tool.getHealthToHeal();
+//    }
 
 }

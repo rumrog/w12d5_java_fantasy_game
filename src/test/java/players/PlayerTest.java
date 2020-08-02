@@ -1,6 +1,7 @@
 package players;
 
 import armory.Armory;
+import armory.PlateArmour;
 import armory.Sword;
 import enemies.Orc;
 import healingTools.Potion;
@@ -14,6 +15,7 @@ import static org.junit.Assert.assertEquals;
 public class PlayerTest {
 
     Barbarian barbarian;
+    Knight knight;
     Wizard wizard;
     Cleric cleric;
 
@@ -22,21 +24,25 @@ public class PlayerTest {
     Armory sword;
     Spells lightingStrike;
     Potion potion;
+    PlateArmour plateArmour;
 
     @Before
     public void before(){
         // Players
-        barbarian = new Barbarian("Conan", 500, 0);
-        wizard = new Wizard("Gandalf", 250, 10);
-        cleric = new Cleric("Elrond", 400, 50);
+        barbarian = new Barbarian("Conan", 50, 0);
+        knight = new Knight("The Black Knight", 40, 100, plateArmour);
+        wizard = new Wizard("Gandalf", 25, 10);
+        cleric = new Cleric("Elrond", 40, 50);
+
 
         // Enemies
-        orc = new Orc("Grishnákh", 200);
+        orc = new Orc("Grishnákh", 20);
 
         // Armory & Spells & Healing Tools
         sword = new Sword(10);
-        lightingStrike = new LightingStrike(20);
+        lightingStrike = new LightingStrike(5);
         potion = new Potion(20);
+        plateArmour = new PlateArmour(5);
     }
 
     @Test
@@ -48,9 +54,9 @@ public class PlayerTest {
 
     @Test
     public void hasHealthPoints(){
-        assertEquals(500, barbarian.getHealthPoints());
-        assertEquals(250, wizard.getHealthPoints());
-        assertEquals(400, cleric.getHealthPoints());
+        assertEquals(50, barbarian.getHealthPoints());
+        assertEquals(25, wizard.getHealthPoints());
+        assertEquals(40, cleric.getHealthPoints());
     }
 
     @Test
@@ -82,13 +88,19 @@ public class PlayerTest {
     public void canAttack(){
         barbarian.attack(sword, orc);
         wizard.attack(lightingStrike, orc);
-        assertEquals(170, orc.getHealthPoints());
+        assertEquals(5, orc.getHealthPoints());
     }
 
     @Test
     public void canHeal(){
         cleric.heal(potion, barbarian);
-        assertEquals(520, barbarian.getHealthPoints());
+        assertEquals(70, barbarian.getHealthPoints());
+    }
+
+    @Test
+    public void canProtect(){
+        knight.takeDamage(10);
+        assertEquals(35, knight.getHealthPoints());
     }
 
 }
