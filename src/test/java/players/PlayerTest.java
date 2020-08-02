@@ -68,5 +68,11 @@ public class PlayerTest {
         assertEquals(1, barbarian.countArmory());
     }
 
+    @Test
+    public void hasToolsInHealingTools(){
+        cleric.addToolToHealingTools(potion);
+        assertEquals(1, cleric.countTools());
+    }
+
 
 }

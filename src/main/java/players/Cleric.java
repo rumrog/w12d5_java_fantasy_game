@@ -17,5 +17,11 @@ public class Cleric extends Player {
         return this.healingTools;
     }
 
+    public void addToolToHealingTools(HealingTools tool){
+        this.healingTools.add(tool);
+    }
 
+    public int countTools(){
+        return this.healingTools.size();
+    }
 }
