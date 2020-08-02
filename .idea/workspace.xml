@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="afaf6cd7-d260-49b2-9b9d-14a2e326d0e1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/actions/IAttack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/actions/IAttack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/actions/IHeal.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -52,7 +52,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.PlayerTest.canAttack">
+  <component name="RunManager" selected="JUnit.PlayerTest.canHeal">
     <configuration name="EnemyTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="w12d5_java_fantasy_game" />
       <extension name="coverage">
@@ -116,7 +116,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PlayerTest.hasToolsInHealingTools" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PlayerTest.canHeal" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="w12d5_java_fantasy_game" />
       <extension name="coverage">
         <pattern>
@@ -126,7 +126,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="players" />
       <option name="MAIN_CLASS_NAME" value="players.PlayerTest" />
-      <option name="METHOD_NAME" value="hasToolsInHealingTools" />
+      <option name="METHOD_NAME" value="canHeal" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -134,11 +134,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PlayerTest.canHeal" />
         <item itemvalue="JUnit.PlayerTest.canAttack" />
         <item itemvalue="JUnit.EnemyTest.canTakeDamage" />
         <item itemvalue="JUnit.EnemyTest.canAddWeapon" />
         <item itemvalue="JUnit.EnemyTest" />
-        <item itemvalue="JUnit.PlayerTest.hasToolsInHealingTools" />
       </list>
     </recent_temporary>
   </component>

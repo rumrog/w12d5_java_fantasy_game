@@ -24,4 +24,8 @@ public class Cleric extends Player {
     public int countTools(){
         return this.healingTools.size();
     }
+
+    public void heal(HealingTools tool, Player player){
+        player.healthPoints += tool.getHealthToHeal();
+    }
 }

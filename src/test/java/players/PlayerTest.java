@@ -64,7 +64,6 @@ public class PlayerTest {
     public void hasSpellsInSpells(){
         wizard.addSpellToSpells(lightingStrike);
         assertEquals(1, wizard.countSpells());
-//        System.out.println(wizard.spells);
     }
 
     @Test
@@ -84,6 +83,12 @@ public class PlayerTest {
         barbarian.attack(sword, orc);
         wizard.attack(lightingStrike, orc);
         assertEquals(170, orc.getHealthPoints());
+    }
+
+    @Test
+    public void canHeal(){
+        cleric.heal(potion, barbarian);
+        assertEquals(520, barbarian.getHealthPoints());
     }
 
 }
