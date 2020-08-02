@@ -2,8 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="afaf6cd7-d260-49b2-9b9d-14a2e326d0e1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/healingTools/HealingTools.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/healingTools/Potion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/players/Cleric.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/healingTools/HealingToolsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/players/Barbarian.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/players/Barbarian.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/players/MagicCharacter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/players/MagicCharacter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/players/MeleeCharacter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/players/MeleeCharacter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/players/Wizard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/players/Wizard.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/players/PlayerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/players/PlayerTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -53,7 +60,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.PlayerTest">
+  <component name="RunManager" selected="JUnit.PlayerTest.hasSpellsInSpells">
     <configuration name="ArmoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="w12d5_java_fantasy_game" />
       <extension name="coverage">
@@ -100,6 +107,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PlayerTest.hasSpellsInSpells" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="w12d5_java_fantasy_game" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="players.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="players" />
+      <option name="MAIN_CLASS_NAME" value="players.PlayerTest" />
+      <option name="METHOD_NAME" value="hasSpellsInSpells" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SpellsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="w12d5_java_fantasy_game" />
       <extension name="coverage">
@@ -117,6 +140,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PlayerTest.hasSpellsInSpells" />
         <item itemvalue="JUnit.PlayerTest" />
         <item itemvalue="JUnit.SpellsTest" />
         <item itemvalue="JUnit.ArmoryTest" />

@@ -13,8 +13,4 @@ public class Barbarian extends MeleeCharacter {
         armory = new ArrayList<Armory>();
     }
 
-    public ArrayList<Armory> getArmory(){
-        return this.armory;
-    }
-
 }

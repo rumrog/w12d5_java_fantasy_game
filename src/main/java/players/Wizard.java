@@ -11,7 +11,4 @@ public class Wizard extends MagicCharacter {
         this.spells = new ArrayList<Spells>();
     }
 
-    public ArrayList<Spells> getSpells(){
-        return this.spells;
-    }
 }
