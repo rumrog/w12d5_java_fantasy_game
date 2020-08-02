@@ -42,8 +42,4 @@ public abstract class Player implements IAttack {
         enemy.takeDamage(spell.getDamageToDeal());
     }
 
-//    public void protect(int damageValue){
-//        player.healthPoints += tool.getHealthToHeal();
-//    }
-
 }

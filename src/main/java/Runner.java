@@ -26,21 +26,18 @@ public class Runner {
         PlateArmour armour = new PlateArmour(5);
 
         // Players
-        Barbarian barbarian = new Barbarian("Conan", 50, 0);
         Knight knight = new Knight("The Black Knight", 40, 100, armour);
-        Wizard wizard = new Wizard("Gandalf", 25, 10);
-        Cleric cleric = new Cleric("Elrond", 40, 50);
-
+        Cleric cleric = new Cleric("The Blue Cleric", 30, 50);
 
         // Enemies
         Orc orc = new Orc("Grishnákh", 20);
 
-
-        System.out.println("Hello barbarian, what's your name?\n");
+        System.out.println(">>> In a cold and dark stone room, a voice whispers in the shadows:\n");
+        System.out.println("Knight, what's your name?\n");
         System.out.println(
 
                 "#################\n" +
-                "#[/][0][/][0][/]#\n" +
+                "#...[/]...[o]...#\n" +
                 "#...............#\n" +
                 "#.......@.......#\n" +
                 "#.....|[_]|.....#\n" +
@@ -55,19 +52,73 @@ public class Runner {
         System.out.println(
 
                 "#################\n" +
-                "#[/][0][ ][0][/]#\n" +
-                "#........./.....#\n" +
-                "#.......@.|.....#\n" +
-                "#.....|[_]......#\n" +
+                "#...[ ]...[o]...#\n" +
+                "#...../.........#\n" +
+                "#.....|.@.......#\n" +
+                "#......[_]|.....#\n" +
                 "#......| |......#\n" +
                 "#...............#\n" +
                 "######.....######\n");
 
-        System.out.println("[You have been given a rusty sword.]");
+        System.out.println(">>> You have been given a rusty sword.\n");
+        System.out.println("Now, get rid of him and bring me something shiny!\n");
+        System.out.println(">>> You exit the room.\n");
 
-        Scanner item = new Scanner(System.in);
-        String inputPlayersItem = item.next();
-        String playersItem = parseString(inputPlayersItem);
 
+//        Scanner item = new Scanner(System.in);
+//        String inputPlayersItem = item.next();
+//        String playersItem = parseString(inputPlayersItem);
+
+        System.out.println(
+
+                "#################\n" +
+                "#...[ ]...[o]...#\n" +
+                "#...............#\n" +
+                "#.......@.......#\n" +
+                "#.....|[_]|.....#\n" +
+                "#...../| |......#\n" +
+                "#...............#\n" +
+                "######.....######\n");
+
+
+        System.out.println(
+
+                "######.....######\n" +
+                "#.......@.......#\n" +
+                "#.....|[_]|.....#\n" +
+                "#...../| |......#\n" +
+                "#...............#\n" +
+                "#...............#\n" +
+                "#........_......#\n" +
+                "#.......(_).....#\n" +
+                "#.....I(___)I...#\n" +
+                "#...../.I.I.....#\n" +
+                "######.....######\n");
+
+        System.out.println(
+
+                "######.....######\n" +
+                "#.......@.......#\n" +
+                "#.....|[_]|.....#\n" +
+                "#...../| |......#\n" +
+                "#...............#\n" +
+                "#.....|----|....#\n" +
+                "#.....|----|....#\n" +
+                "#################\n");
+
+
+        System.out.println(
+
+                "#################\n" +
+                "#...[ ]...[ ]...#\n" +
+                "#...............#\n" +
+                "#...@.......0...#\n" +
+                "#.|[_]|...|[_]|.#\n" +
+                "#./| |.....| |o.#\n" +
+                "#...............#\n" +
+                "######.....######\n");
     }
+
+
+
 }
