@@ -14,5 +14,11 @@ public abstract class MagicCharacter extends Player {
         spells = new ArrayList<Spells>();
     }
 
+    public void addSpellToSpells(Spells spell){
+        this.spells.add(spell);
+    }
 
+    public int countSpells(){
+        return this.spells.size();
+    }
 }

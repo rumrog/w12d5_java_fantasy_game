@@ -10,4 +10,8 @@ public class Wizard extends MagicCharacter {
         super(name, healthPoints, treasureChest);
         this.spells = new ArrayList<Spells>();
     }
+
+    public ArrayList<Spells> getSpells(){
+        return this.spells;
+    }
 }
