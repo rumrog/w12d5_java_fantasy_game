@@ -82,7 +82,8 @@ public class PlayerTest {
     @Test
     public void canAttack(){
         barbarian.attack(sword, orc);
-        assertEquals(190, orc.getHealthPoints());
+        wizard.attack(lightingStrike, orc);
+        assertEquals(170, orc.getHealthPoints());
     }
 
 }

@@ -1,5 +1,6 @@
 package players;
 
+import enemies.Enemy;
 import spells.Spells;
 
 import java.util.ArrayList;
@@ -24,4 +25,5 @@ public abstract class MagicCharacter extends Player {
     public int countSpells(){
         return this.spells.size();
     }
+
 }

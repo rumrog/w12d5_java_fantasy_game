@@ -3,6 +3,7 @@ package players;
 import actions.IAttack;
 import armory.Armory;
 import enemies.Enemy;
+import spells.Spells;
 
 public abstract class Player implements IAttack {
 
@@ -34,6 +35,10 @@ public abstract class Player implements IAttack {
 
     public void attack(Armory item, Enemy enemy){
         enemy.takeDamage(item.getDamageToDeal());
+    }
+
+    public void attack(Spells spell, Enemy enemy){
+        enemy.takeDamage(spell.getDamageToDeal());
     }
 
 }
