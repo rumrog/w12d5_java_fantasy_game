@@ -1,6 +1,10 @@
 package players;
 
-public abstract class Player {
+import actions.IAttack;
+import armory.Armory;
+import enemies.Enemy;
+
+public abstract class Player implements IAttack {
 
     protected String name;
     protected int healthPoints;
@@ -22,6 +26,14 @@ public abstract class Player {
 
     public int getTreasureChest(){
         return this.treasureChest;
+    }
+
+    public void takeDamage(int damageValue){
+        this.healthPoints -= damageValue;
+    }
+
+    public void attack(Armory item, Enemy enemy){
+        enemy.takeDamage(item.getDamageToDeal());
     }
 
 }

@@ -2,13 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="afaf6cd7-d260-49b2-9b9d-14a2e326d0e1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/enemies/Enemy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/enemies/Orc.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/enemies/EnemyTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/actions/IAttack.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/armory/Sword.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/armory/Sword.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/healingTools/Potion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/healingTools/Potion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/spells/LightingStrike.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spells/LightingStrike.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/enemies/Enemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/enemies/Enemy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/players/MeleeCharacter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/players/MeleeCharacter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/players/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/players/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/enemies/EnemyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/enemies/EnemyTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/players/PlayerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/players/PlayerTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,6 +20,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -57,7 +58,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.EnemyTest">
+  <component name="RunManager" selected="JUnit.PlayerTest.canAttack">
     <configuration name="EnemyTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="w12d5_java_fantasy_game" />
       <extension name="coverage">
@@ -73,22 +74,39 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PlayerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="EnemyTest.canAddWeapon" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="w12d5_java_fantasy_game" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="players.*" />
+          <option name="PATTERN" value="enemies.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="players" />
-      <option name="MAIN_CLASS_NAME" value="players.PlayerTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="enemies" />
+      <option name="MAIN_CLASS_NAME" value="enemies.EnemyTest" />
+      <option name="METHOD_NAME" value="canAddWeapon" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PlayerTest.hasSpellsInSpells" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="EnemyTest.canTakeDamage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="w12d5_java_fantasy_game" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="enemies.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="enemies" />
+      <option name="MAIN_CLASS_NAME" value="enemies.EnemyTest" />
+      <option name="METHOD_NAME" value="canTakeDamage" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PlayerTest.canAttack" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="w12d5_java_fantasy_game" />
       <extension name="coverage">
         <pattern>
@@ -98,7 +116,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="players" />
       <option name="MAIN_CLASS_NAME" value="players.PlayerTest" />
-      <option name="METHOD_NAME" value="hasSpellsInSpells" />
+      <option name="METHOD_NAME" value="canAttack" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -120,28 +138,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SpellsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="w12d5_java_fantasy_game" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="spells.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="spells" />
-      <option name="MAIN_CLASS_NAME" value="spells.SpellsTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PlayerTest.canAttack" />
+        <item itemvalue="JUnit.EnemyTest.canTakeDamage" />
+        <item itemvalue="JUnit.EnemyTest.canAddWeapon" />
         <item itemvalue="JUnit.EnemyTest" />
         <item itemvalue="JUnit.PlayerTest.hasToolsInHealingTools" />
-        <item itemvalue="JUnit.PlayerTest.hasSpellsInSpells" />
-        <item itemvalue="JUnit.PlayerTest" />
-        <item itemvalue="JUnit.SpellsTest" />
       </list>
     </recent_temporary>
   </component>

@@ -2,6 +2,7 @@ package players;
 
 import armory.Armory;
 import armory.Sword;
+import enemies.Orc;
 import healingTools.Potion;
 import org.junit.Before;
 import org.junit.Test;
@@ -16,6 +17,8 @@ public class PlayerTest {
     Wizard wizard;
     Cleric cleric;
 
+    Orc orc;
+
     Armory sword;
     Spells lightingStrike;
     Potion potion;
@@ -27,6 +30,8 @@ public class PlayerTest {
         wizard = new Wizard("Gandalf", 250, 10);
         cleric = new Cleric("Elrond", 400, 50);
 
+        // Enemies
+        orc = new Orc("Grishnákh", 200);
 
         // Armory & Spells & Healing Tools
         sword = new Sword(10);
@@ -74,5 +79,10 @@ public class PlayerTest {
         assertEquals(1, cleric.countTools());
     }
 
+    @Test
+    public void canAttack(){
+        barbarian.attack(sword, orc);
+        assertEquals(190, orc.getHealthPoints());
+    }
 
 }

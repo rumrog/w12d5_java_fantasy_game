@@ -1,6 +1,7 @@
 package players;
 
 import armory.Armory;
+import enemies.Enemy;
 
 import java.util.ArrayList;
 
@@ -24,5 +25,6 @@ public abstract class MeleeCharacter extends Player {
     public int countArmory(){
         return this.armory.size();
     }
+
 }
 
