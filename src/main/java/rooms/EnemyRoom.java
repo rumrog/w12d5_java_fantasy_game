@@ -7,9 +7,12 @@ import java.util.ArrayList;
 public class EnemyRoom extends Room {
 
         private ArrayList<Enemy> enemies;
+        private Exit exit;
 
-        public EnemyRoom(){
+
+    public EnemyRoom(Exit exit){
             this.enemies = new ArrayList<Enemy>();
+            this.exit = exit;
         }
 
         public void addEnemyToRoom(Enemy enemy){
@@ -18,5 +21,9 @@ public class EnemyRoom extends Room {
 
         public int countEnemies(){
             return this.enemies.size();
+        }
+
+        public Exit getExit(){
+        return this.exit;
         }
 }

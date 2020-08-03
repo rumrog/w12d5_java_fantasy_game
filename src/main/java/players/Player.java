@@ -3,7 +3,6 @@ package players;
 import actions.IAttack;
 import armory.Armory;
 import enemies.Enemy;
-import healingTools.HealingTools;
 import rooms.TreasureRoom;
 import spells.Spells;
 

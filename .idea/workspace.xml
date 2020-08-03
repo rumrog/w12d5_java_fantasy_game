@@ -2,13 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="afaf6cd7-d260-49b2-9b9d-14a2e326d0e1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/rooms/EnemyRoom.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/rooms/Room.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/rooms/TreasureRoom.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/rooms/RoomTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/rooms/Exit.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Runner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/players/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/players/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rooms/EnemyRoom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rooms/EnemyRoom.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rooms/TreasureRoom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rooms/TreasureRoom.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/players/PlayerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/players/PlayerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/rooms/RoomTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/rooms/RoomTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,6 +22,7 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -59,26 +61,10 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.PlayerTest.canCollectTreasure">
+  <component name="RunManager" selected="Application.Runner">
     <configuration name="Runner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Runner" />
       <module name="w12d5_java_fantasy_game" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="KnightTest.canProtect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="w12d5_java_fantasy_game" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="players.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="players" />
-      <option name="MAIN_CLASS_NAME" value="players.KnightTest" />
-      <option name="METHOD_NAME" value="canProtect" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -130,13 +116,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="RoomTest.hasExit" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="w12d5_java_fantasy_game" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="rooms.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="rooms" />
+      <option name="MAIN_CLASS_NAME" value="rooms.RoomTest" />
+      <option name="METHOD_NAME" value="hasExit" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.PlayerTest.canCollectTreasure" />
-        <item itemvalue="JUnit.RoomTest" />
         <item itemvalue="Application.Runner" />
+        <item itemvalue="JUnit.RoomTest" />
+        <item itemvalue="JUnit.RoomTest.hasExit" />
+        <item itemvalue="JUnit.PlayerTest.canCollectTreasure" />
         <item itemvalue="JUnit.PlayerTest.canProtect" />
-        <item itemvalue="JUnit.KnightTest.canProtect" />
       </list>
     </recent_temporary>
   </component>

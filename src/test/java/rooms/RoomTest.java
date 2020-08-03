@@ -16,8 +16,8 @@ public class RoomTest {
     @Before
     public void before(){
         orc = new Orc("Grishnákh", 20);
-        enemyRoom = new EnemyRoom();
-        treasureRoom = new TreasureRoom(200);
+        enemyRoom = new EnemyRoom(Exit.SOUTH);
+        treasureRoom = new TreasureRoom(200, Exit.NORTH);
 
     }
 
@@ -31,5 +31,12 @@ public class RoomTest {
     public void hasTreasure(){
         assertEquals(200, treasureRoom.allowToCollectTreasure());
     }
+
+    @Test
+    public void hasExit(){
+        assertEquals(Exit.SOUTH, enemyRoom.getExit());
+        assertEquals(Exit.NORTH, treasureRoom.getExit());
+    }
+
 
 }

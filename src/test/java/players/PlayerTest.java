@@ -7,6 +7,7 @@ import enemies.Orc;
 import healingTools.Potion;
 import org.junit.Before;
 import org.junit.Test;
+import rooms.Exit;
 import rooms.TreasureRoom;
 import spells.LightingStrike;
 import spells.Spells;
@@ -48,7 +49,7 @@ public class PlayerTest {
         orc = new Orc("Grishnákh", 20);
 
         // Rooms
-        treasureRoom = new TreasureRoom(200);
+        treasureRoom = new TreasureRoom(200, Exit.NORTH);
 
     }
 
